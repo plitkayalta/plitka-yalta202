@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плиточник Ялта — Артур | Профессиональная укладка плитки премиум-класса</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a0a',
+                        cardbg: '#141414',
+                        cardborder: '#262626',
+                        accent: {
+                            DEFAULT: '#f59e0b',
+                            light: '#fbbf24',
+                            dark: '#d97706',
+                            yellow: '#eab308'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f3f4f6;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border-color: #f59e0b;
+        }
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+        }
+        .gold-glow-lg {
+            box-shadow: 0 0 50px rgba(245, 158, 11, 0.35);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-gray-100 antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- Top Notification Bar / Quick Contact Header -->
+    <div class="bg-black border-b border-cardborder py-2 px-4 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-gray-400">
+                <i class="fa-solid fa-location-dot text-amber-500"></i>
+                <span>Работаю в радиусе 20 км: Ялта, Никита, Гурзуф, Массандра, Ливадия, Ореанда, Гаспра, Кореиз, Алупка, Симеиз</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+79785009434" class="text-amber-400 font-semibold hover:text-amber-300 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-xs"></i> +7 978 500 94 34
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-darkbg/90 backdrop-blur-md border-b border-cardborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-black font-black text-xl shadow-lg shadow-amber-500/20">
+                    А
+                </div>
+                <div>
+                    <span class="text-lg sm:text-xl font-bold tracking-tight text-white block leading-tight">Плиточник Ялта</span>
+                    <span class="text-xs uppercase tracking-widest text-amber-500 font-semibold">Артур • Мастер укладки</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#services" class="hover:text-amber-400 transition">Услуги</a>
+                <a href="#tech" class="hover:text-amber-400 transition">Технологии</a>
+                <a href="#portfolio" class="hover:text-amber-400 transition">Портфолио</a>
+                <a href="#calculator" class="hover:text-amber-400 transition">Калькулятор</a>
+                <a href="#geography" class="hover:text-amber-400 transition">География</a>
+                <a href="#booking" class="hover:text-amber-400 transition">Контакты</a>
+            </nav>
+
+            <!-- CTA / Messengers -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="https://t.me/" target="_blank" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-cardbg border border-cardborder flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-500/50 transition">
+                    <i class="fa-brands fa-telegram text-lg"></i>
+                </a>
+                <a href="https://wa.me/79785009434" target="_blank" aria-label="WhatsApp" class="w-10 h-10 rounded-lg bg-cardbg border border-cardborder flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-500/50 transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+                <a href="#booking" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-amber-500/20 text-sm">
+                    Заказать расчёт
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-amber-400 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardbg border-b border-cardborder px-6 py-4 space-y-3">
+            <a href="#services" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Услуги</a>
+            <a href="#tech" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Технологии</a>
+            <a href="#portfolio" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Портфолио</a>
+            <a href="#calculator" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Калькулятор</a>
+            <a href="#geography" class="block text-gray-300 hover:text-amber-400 font-medium py-1">География</a>
+            <a href="#booking" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Контакты</a>
+            <div class="pt-2 flex items-center gap-3 border-t border-cardborder">
+                <a href="tel:+79785009434" class="w-full text-center bg-amber-500 text-black font-bold py-3 rounded-xl block">Позвонить</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 overflow-hidden bg-gradient-to-b from-darkbg via-[#121212] to-darkbg">
+        <!-- Background Glow Elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-award"></i> Профессиональная укладка плитки в Ялте
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-[1.1]">
+                        Плиточник Ялта — <span class="gold-gradient-text">Артур</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Профессиональный монтаж крупноформатного керамогранита размером до <span class="text-amber-400 font-semibold">120 см x 60 см</span> с безупречной алмазной заусовкой углов под 45° и премиальной химией для швов.
+                    </p>
+
+                    <!-- Key highlights badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="bg-cardbg border border-cardborder p-3 rounded-xl flex items-center gap-3">
+                            <i class="fa-solid fa-gem text-amber-500 text-xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-400">Формат</p>
+                                <p class="text-sm font-bold text-white">до 120х60 см</p>
+                            </div>
+                        </div>
+                        <div class="bg-cardbg border border-cardborder p-3 rounded-xl flex items-center gap-3">
+                            <i class="fa-solid fa-angles-right text-amber-500 text-xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-400">Углы 45°</p>
+                                <p class="text-sm font-bold text-white">Алмазный рез</p>
+                            </div>
+                        </div>
+                        <div class="bg-cardbg border border-cardborder p-3 rounded-xl flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-shield-halved text-amber-500 text-xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-400">Гарантия</p>
+                                <p class="text-sm font-bold text-white">3 года по договору</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons & Aligned Messengers -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#booking" class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2">
+                            <span>Записаться на замер</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <a href="https://t.me/" target="_blank" title="Telegram" class="w-12 h-12 rounded-xl bg-cardbg border border-cardborder flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-500/50 transition text-xl">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="https://wa.me/79785009434" target="_blank" title="WhatsApp" class="w-12 h-12 rounded-xl bg-cardbg border border-cardborder flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-500/50 transition text-xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="viber://chat?number=%2B79785009434" target="_blank" title="Max / Viber" class="w-12 h-12 rounded-xl bg-cardbg border border-cardborder flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-500/50 transition text-xl">
+                                <i class="fa-solid fa-comments"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500 to-amber-700 rounded-3xl blur-lg opacity-30"></div>
+                        <div class="relative rounded-2xl overflow-hidden bg-cardbg border border-cardborder p-2">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Плиточник Артур за работой" class="rounded-xl w-full h-[420px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/800x600/141414/f59e0b?text=Artur+Tiling';">
+                            <div class="absolute bottom-6 left-6 right-6 bg-black/80 backdrop-blur-md p-4 rounded-xl border border-cardborder">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-bold text-white">Профессиональный инструмент</p>
+                                        <p class="text-xs text-gray-400">Плиткорезы Sigma, системы СВП, алмазные диски</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Horizontal Line Section -->
+    <section class="bg-cardbg border-y border-cardborder py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl shrink-0">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-base">Свяжитесь с Артуром напрямую</h3>
+                        <p class="text-xs text-gray-400">Консультация, предварительный расчёт сметы и выезд на объект в Ялте</p>
+                    </div>
+                </div>
+                <!-- Perfectly aligned single horizontal line contacts -->
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+                    <a href="tel:+79785009434" class="flex items-center gap-2 text-white bg-black/60 hover:bg-amber-500 hover:text-black border border-cardborder hover:border-amber-500 px-4 py-2.5 rounded-xl transition text-sm font-semibold">
+                        <i class="fa-solid fa-phone text-amber-500 group-hover:text-black"></i>
+                        <span>+7 978 500 94 34</span>
+                    </a>
+                    <a href="https://t.me/" target="_blank" class="flex items-center gap-2 text-white bg-black/60 hover:bg-amber-500 hover:text-black border border-cardborder hover:border-amber-500 px-4 py-2.5 rounded-xl transition text-sm font-semibold">
+                        <i class="fa-brands fa-telegram text-amber-500"></i>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://wa.me/79785009434" target="_blank" class="flex items-center gap-2 text-white bg-black/60 hover:bg-amber-500 hover:text-black border border-cardborder hover:border-amber-500 px-4 py-2.5 rounded-xl transition text-sm font-semibold">
+                        <i class="fa-brands fa-whatsapp text-amber-500"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="viber://chat?number=%2B79785009434" target="_blank" class="flex items-center gap-2 text-white bg-black/60 hover:bg-amber-500 hover:text-black border border-cardborder hover:border-amber-500 px-4 py-2.5 rounded-xl transition text-sm font-semibold">
+                        <i class="fa-solid fa-comments text-amber-500"></i>
+                        <span>Max / Viber</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-darkbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Профессиональные услуги</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Комплекс плиточных работ премиум-класса</h2>
+                <p class="text-gray-400 text-base">Каждый этап выполняется по строгим технологическим стандартам с применением профессионального оборудования.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition">
+                        <i class="fa-solid fa-chess-board"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Укладка керамогранита</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Профессиональный монтаж крупноформатного керамогранита размером до 120 см x 65 см с соблюдением геометрии, плоскости и беспрекословным контролем швов.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Ровность укладки по лазерному уровню</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Применение систем СВП (выравнивания плитки)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Работа с крупным форматом до 120х60 см</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Алмазная заусовка углов 45°</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Идеальная стыковка внешних углов под 45 градусов без использования пластиковых угольников. Эстетика и долговечность монолитного соединения.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Спил на профессиональном станке</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Тончайшая доводка и шлифовка кромки</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Безупречные наружные углы и короба</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Гидроизоляция и подготовка</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Комплексная подготовка поверхностей: выравнивание стен и полов, устройство надежной обмазочной и рулонной гидроизоляции мокрых зон.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Двухкомпонентная эластичная гидроизоляция</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Штукатурка по маякам в плоскость 90°</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Обеспыливание и грунтование глубокого проникновения</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition">
+                        <i class="fa-solid fa-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Затирка швов</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Профессиональное заполнение межплиточных швов с применением специализированных составов для максимальной долговечности и гигиеничности.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Двухкомпонентная эпоксидная затирка швов</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Высокопрочная эластичная цементная затирка швов</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Защита от грибка, влаги и бытовой химии</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition">
+                        <i class="fa-solid fa-bath"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Облицовка санузлов под ключ</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Комплексный ремонт ванных комнат и душевых зон: скрытые люки ревизии, инсталляции, интеграция сантехники и идеальная подрезка.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Душевые поддоны из мозаики и плитки</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Создание ниш и полок с подсветкой</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Аккуратные технологические узлы</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Полы и террасы</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Облицовка полов в жилых помещениях, коридорах, кухнях, а также уличных террас и лестничных маршей с учетом уклонов и морозостойкости.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Укладка на теплые полы</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Ступени с капиносом и заусовкой</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Износостойкие клеи класса С2ТЕ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Tech & Materials Section -->
+    <section id="tech" class="py-24 bg-[#121212] border-y border-cardborder relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Экспертный подход</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">Технические стандарты и материалы премиум-класса</h2>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Долговечность ремонта на 90% зависит от соблюдения технологии подготовки и правильного подбора химических составов. Артур не экономит на скрытых работах и расходных материалах.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 bg-cardbg p-4 rounded-xl border border-cardborder">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 font-bold mt-1">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base mb-1">Крупный формат до 120х60 см</h4>
+                                <p class="text-gray-400 text-sm">Специализированные присоски, транспортировочные рамы и система точного реза позволяют монтировать массивный керамогранит с минимальными и незаметными швами.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-cardbg p-4 rounded-xl border border-cardborder">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 font-bold mt-1">
+                                <i class="fa-solid fa-brush"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base mb-1">Двухкомпонентная эпоксидная затирка швов</h4>
+                                <p class="text-gray-400 text-sm">Применяется в душевых зонах, на фартуках и полах. Абсолютная стойкость к влаге, плесени, кислотам и механическому истиранию на десятилетия.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-cardbg p-4 rounded-xl border border-cardborder">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 font-bold mt-1">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base mb-1">Высокопрочная эластичная цементная затирка швов</h4>
+                                <p class="text-gray-400 text-sm">Используется для стен и жилых комнат. Обладает гидрофобными добавками, защищает от загрязнений и сохраняет насыщенный цвет без выцветания.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="rounded-2xl overflow-hidden border border-cardborder bg-cardbg p-2">
+                                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=80" alt="Укладка плитки" class="rounded-xl w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/141414/f59e0b?text=Tile+Work';">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden border border-cardborder bg-cardbg p-2">
+                                <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80" alt="Работа с плиткой" class="rounded-xl w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400/141414/f59e0b?text=Precision';">
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-8">
+                            <div class="rounded-2xl overflow-hidden border border-cardborder bg-cardbg p-2">
+                                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Инструмент" class="rounded-xl w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400/141414/f59e0b?text=Tools';">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden border border-cardborder bg-cardbg p-2">
+                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Интерьер" class="rounded-xl w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400/141414/f59e0b?text=Interior';">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="py-24 bg-darkbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="space-y-4">
+                    <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Примеры реализованных объектов</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">Портфолио работ Артура</h2>
+                    <p class="text-gray-400 text-base max-w-xl">Кликните на любое изображение для детального просмотра в высоком разрешении.</p>
+                </div>
+                <div class="flex items-center gap-2 overflow-x-auto pb-2">
+                    <button class="filter-btn active bg-amber-500 text-black px-4 py-2 rounded-xl text-xs font-bold transition whitespace-nowrap" data-filter="all">Все работы</button>
+                    <button class="filter-btn bg-cardbg border border-cardborder text-gray-300 hover:text-amber-400 px-4 py-2 rounded-xl text-xs font-bold transition whitespace-nowrap" data-filter="bathroom">Санузлы</button>
+                    <button class="filter-btn bg-cardbg border border-cardborder text-gray-300 hover:text-amber-400 px-4 py-2 rounded-xl text-xs font-bold transition whitespace-nowrap" data-filter="large">Крупный формат</button>
+                    <button class="filter-btn bg-cardbg border border-cardborder text-gray-300 hover:text-amber-400 px-4 py-2 rounded-xl text-xs font-bold transition whitespace-nowrap" data-filter="miter">Углы 45°</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-cardborder bg-cardbg cursor-pointer" data-category="bathroom">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Современный санузел в Ялте" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x600/141414/f59e0b?text=Bathroom+1';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">Санузлы • Ялта</span>
+                        <h4 class="text-white font-bold text-lg">Облицовка ванной комнаты керамогранитом 120х60</h4>
+                        <p class="text-gray-300 text-xs mt-1">Эпоксидная затирка, запил под 45°</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-cardborder bg-cardbg cursor-pointer" data-category="large">
+                    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" alt="Крупный формат керамогранита" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x600/141414/f59e0b?text=Large+Format';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">Крупный формат • Ливадия</span>
+                        <h4 class="text-white font-bold text-lg">Укладка плит 120х60 на пол гостиной</h4>
+                        <p class="text-gray-300 text-xs mt-1">Минимальный шов, лазерная плоскость</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-cardborder bg-cardbg cursor-pointer" data-category="miter">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" alt="Запил под 45 градусов" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x600/141414/f59e0b?text=Miter+Cuts';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">Углы 45° • Гурзуф</span>
+                        <h4 class="text-white font-bold text-lg">Алмазная заусовка внешних углов короба</h4>
+                        <p class="text-gray-300 text-xs mt-1">Идеальное соединение без уголков</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-cardborder bg-cardbg cursor-pointer" data-category="bathroom">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Душевая зона" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x600/141414/f59e0b?text=Shower+Zone';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">Санузлы • Массандра</span>
+                        <h4 class="text-white font-bold text-lg">Душевой поддон в строительном исполнении</h4>
+                        <p class="text-gray-300 text-xs mt-1">Гидроизоляция, трап, мозаика и плитка</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-cardborder bg-cardbg cursor-pointer" data-category="large">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Крупноформатная плитка" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x600/141414/f59e0b?text=Large+Format+2';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">Крупный формат • Никита</span>
+                        <h4 class="text-white font-bold text-lg">Облицовка стен в холле плиткой 120х60</h4>
+                        <p class="text-gray-300 text-xs mt-1">Высокопрочный клей, идеальная плоскость</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-cardborder bg-cardbg cursor-pointer" data-category="miter">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Детали отделки" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x600/141414/f59e0b?text=Details';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">Углы 45° • Алупка</span>
+                        <h4 class="text-white font-bold text-lg">Интеграция скрытого люка и полок</h4>
+                        <p class="text-gray-300 text-xs mt-1">Ювелирная подрезка под 45 градусов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Image Zoom -->
+    <div id="image-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-cardbg border border-cardborder rounded-2xl p-4">
+            <button id="modal-close" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/80 text-white flex items-center justify-center hover:bg-amber-500 hover:text-black transition z-10">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <img id="modal-img" src="" alt="Zoomed portfolio image" class="w-full max-h-[75vh] object-contain rounded-xl">
+            <div class="mt-4 text-center">
+                <h4 id="modal-title" class="text-white font-bold text-lg"></h4>
+                <p id="modal-desc" class="text-gray-400 text-xs mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Cost Calculator Section -->
+    <section id="calculator" class="py-24 bg-[#121212] border-y border-cardborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Прозрачный расчет</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Интерактивный калькулятор стоимости</h2>
+                <p class="text-gray-400 text-base">Рассчитайте предварительную смету на укладку плитки и дополнительные работы онлайн.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Calculator Controls -->
+                <div class="lg:col-span-7 bg-cardbg border border-cardborder p-8 rounded-2xl space-y-8">
+                    <!-- Area slider -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <label class="text-white font-bold text-sm">Площадь помещения (кв.м):</label>
+                            <span id="area-val" class="text-amber-400 font-extrabold text-lg bg-amber-500/10 px-3 py-1 rounded-lg border border-amber-500/20">35 м²</span>
+                        </div>
+                        <input type="range" id="calc-area" min="5" max="250" value="35" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-amber-500">
+                    </div>
+
+                    <!-- Tile type -->
+                    <div class="space-y-3">
+                        <label class="text-white font-bold text-sm block">Тип и формат плитки:</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="tile-type" value="standard" class="peer hidden" checked>
+                                <div class="p-4 rounded-xl bg-black/40 border border-cardborder peer-checked:border-amber-500 peer-checked:bg-amber-500/10 transition text-center">
+                                    <p class="text-white font-bold text-sm">Стандарт</p>
+                                    <p class="text-gray-400 text-xs mt-1">До 60х60 см</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="tile-type" value="large" class="peer hidden">
+                                <div class="p-4 rounded-xl bg-black/40 border border-cardborder peer-checked:border-amber-500 peer-checked:bg-amber-500/10 transition text-center">
+                                    <p class="text-white font-bold text-sm">Крупный формат</p>
+                                    <p class="text-gray-400 text-xs mt-1">До 120х60 см</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="tile-type" value="mosaic" class="peer hidden">
+                                <div class="p-4 rounded-xl bg-black/40 border border-cardborder peer-checked:border-amber-500 peer-checked:bg-amber-500/10 transition text-center">
+                                    <p class="text-white font-bold text-sm">Мозаика</p>
+                                    <p class="text-gray-400 text-xs mt-1">Сложные зоны</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Additional Options -->
+                    <div class="space-y-3 pt-2">
+                        <label class="text-white font-bold text-sm block">Дополнительные работы:</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center justify-between p-3.5 rounded-xl bg-black/40 border border-cardborder cursor-pointer hover:border-amber-500/50 transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="opt-miter" class="w-5 h-5 accent-amber-500 rounded bg-gray-900 border-gray-700">
+                                    <span class="text-sm text-gray-200 font-medium">Алмазная заусовка углов под 45° (пог. м)</span>
+                                </div>
+                                <span class="text-amber-400 text-xs font-semibold">+ 15 погонных метров</span>
+                            </label>
+
+                            <label class="flex items-center justify-between p-3.5 rounded-xl bg-black/40 border border-cardborder cursor-pointer hover:border-amber-500/50 transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="opt-hydro" class="w-5 h-5 accent-amber-500 rounded bg-gray-900 border-gray-700" checked>
+                                    <span class="text-sm text-gray-200 font-medium">Гидроизоляция мокрых зон</span>
+                                </div>
+                                <span class="text-amber-400 text-xs font-semibold">Включено</span>
+                            </label>
+
+                            <label class="flex items-center justify-between p-3.5 rounded-xl bg-black/40 border border-cardborder cursor-pointer hover:border-amber-500/50 transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="opt-epoxy" class="w-5 h-5 accent-amber-500 rounded bg-gray-900 border-gray-700">
+                                    <span class="text-sm text-gray-200 font-medium">Двухкомпонентная эпоксидная затирка швов</span>
+                                </div>
+                                <span class="text-amber-400 text-xs font-semibold">Премиум-опция</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Summary Card -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-cardbg to-black border border-cardborder p-8 rounded-2xl space-y-6 sticky top-28">
+                    <h3 class="text-xl font-bold text-white border-b border-cardborder pb-4">Предварительная смета</h3>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between text-gray-300">
+                            <span>Базовая укладка плитки:</span>
+                            <span id="res-base" class="font-bold text-white">0 ₽</span>
+                        </div>
+                        <div class="flex justify-between text-gray-300">
+                            <span>Заусовка углов 45°:</span>
+                            <span id="res-miter" class="font-bold text-white">0 ₽</span>
+                        </div>
+                        <div class="flex justify-between text-gray-300">
+                            <span>Гидроизоляция и подготовка:</span>
+                            <span id="res-hydro" class="font-bold text-white">0 ₽</span>
+                        </div>
+                        <div class="flex justify-between text-gray-300">
+                            <span>Затирочные работы:</span>
+                            <span id="res-grout" class="font-bold text-white">0 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-cardborder pt-6 space-y-2">
+                        <p class="text-xs text-gray-400 uppercase tracking-widest">Итого ориентировочно:</p>
+                        <div class="text-3xl sm:text-4xl font-black gold-gradient-text" id="res-total">0 ₽</div>
+                        <p class="text-xs text-gray-500 pt-1">* Точная стоимость определяется мастером после бесплатного выезда и замера на объекте.</p>
+                    </div>
+
+                    <a href="#booking" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold py-4 rounded-xl transition text-center block shadow-lg shadow-amber-500/20">
+                        Забронировать дату по этой смете
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geography Section (20 km radius strictly) -->
+    <section id="geography" class="py-24 bg-darkbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">География работы</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Выезд мастера в радиусе 20 км от Ялты</h2>
+                <p class="text-gray-400 text-base">Артур выполняет работы по укладке плитки на Южном берегу Крыма в следующих населенных пунктах:</p>
+            </div>
+
+            <!-- Locations Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Ялта</h4>
+                    <p class="text-xs text-gray-400 mt-1">Центр, Отрадное</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Никита</h4>
+                    <p class="text-xs text-gray-400 mt-1">Ботанический сад</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Гурзуф</h4>
+                    <p class="text-xs text-gray-400 mt-1">Побережье, Артек</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Массандра</h4>
+                    <p class="text-xs text-gray-400 mt-1">Верхняя, Нижняя</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Ливадия</h4>
+                    <p class="text-xs text-gray-400 mt-1">Дворец, санатории</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Ореанда</h4>
+                    <p class="text-xs text-gray-400 mt-1">Нижняя, Верхняя</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Гаспра</h4>
+                    <p class="text-xs text-gray-400 mt-1">Ласточкино гнездо</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Кореиз</h4>
+                    <p class="text-xs text-gray-400 mt-1">Мисхор</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Алупка</h4>
+                    <p class="text-xs text-gray-400 mt-1">Воронцовский парк</p>
+                </div>
+                <div class="bg-cardbg border border-cardborder hover:border-amber-500/50 p-5 rounded-xl text-center transition group">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mb-2 group-hover:scale-110 transition"></i>
+                    <h4 class="text-white font-bold text-base">Симеиз</h4>
+                    <p class="text-xs text-gray-400 mt-1">Гора Кошка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Form Section -->
+    <section id="booking" class="py-24 bg-[#121212] border-t border-cardborder relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-amber-500 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Связь с мастером</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">Забронируйте выезд на замер и консультацию</h2>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Оставьте заявку на сайте или свяжитесь с Артуром через удобный мессенджер. Выезд на объект по Ялте и пригородам для составления сметы — бесплатный.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-4 bg-cardbg p-4 rounded-xl border border-cardborder">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400">Телефон для связи</p>
+                                <a href="tel:+79785009434" class="text-white font-bold text-lg hover:text-amber-400 transition">+7 978 500 94 34</a>
+                            </div>
+                        </div>
+
+                        <!-- Single horizontal line messengers in contact block -->
+                        <div class="bg-cardbg p-4 rounded-xl border border-cardborder space-y-3">
+                            <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Мссенджеры и связь:</p>
+                            <div class="flex flex-wrap items-center gap-3">
+                                <a href="https://t.me/" target="_blank" class="bg-black border border-cardborder hover:border-amber-500 text-white hover:text-amber-400 px-4 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+                                    <i class="fa-brands fa-telegram text-amber-500"></i> Telegram
+                                </a>
+                                <a href="https://wa.me/79785009434" target="_blank" class="bg-black border border-cardborder hover:border-amber-500 text-white hover:text-amber-400 px-4 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-amber-500"></i> WhatsApp
+                                </a>
+                                <a href="viber://chat?number=%2B79785009434" target="_blank" class="bg-black border border-cardborder hover:border-amber-500 text-white hover:text-amber-400 px-4 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+                                    <i class="fa-solid fa-comments text-amber-500"></i> Max / Viber
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <form id="contact-form" class="bg-cardbg border border-cardborder p-8 rounded-2xl space-y-6 shadow-2xl">
+                        <h3 class="text-xl font-bold text-white">Форма онлайн-заявки</h3>
+                        
+                        <div class="space-y-2">
+                            <label class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Ваше имя:</label>
+                            <input type="text" id="client-name" required placeholder="Введите ваше имя" class="w-full bg-black/60 border border-cardborder focus:border-amber-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Номер телефона:</label>
+                            <input type="tel" id="client-phone" required placeholder="+7 (978) 000-00-00" class="w-full bg-black/60 border border-cardborder focus:border-amber-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Населенный пункт:</label>
+                            <select id="client-location" class="w-full bg-black/60 border border-cardborder focus:border-amber-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition">
+                                <option value="Ялта">Ялта</option>
+                                <option value="Никита">Никита</option>
+                                <option value="Гурзуф">Гурзуф</option>
+                                <option value="Массандра">Массандра</option>
+                                <option value="Ливадия">Ливадия</option>
+                                <option value="Ореанда">Ореанда</option>
+                                <option value="Гаспра">Гаспра</option>
+                                <option value="Кореиз">Кореиз</option>
+                                <option value="Алупка">Алупка</option>
+                                <option value="Симеиз">Симеиз</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Комментарий к заказу:</label>
+                            <textarea id="client-comment" rows="3" placeholder="Площадь, тип плитки (например, 120х60), пожелания..." class="w-full bg-black/60 border border-cardborder focus:border-amber-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold py-4 rounded-xl transition shadow-lg shadow-amber-500/20">
+                            Отправить заявку Артуру
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Modal for Success Message -->
+    <div id="success-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-cardbg border border-amber-500/50 max-w-md w-full p-8 rounded-2xl text-center space-y-4">
+            <div class="w-16 h-16 bg-amber-500 text-black rounded-full flex items-center justify-center text-3xl mx-auto shadow-lg shadow-amber-500/30">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white">Заявка принята!</h3>
+            <p class="text-gray-300 text-sm">Спасибо за обращение! Артур свяжется с вами в ближайшее время по указанному номеру телефона.</p>
+            <button id="success-close" class="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-3 rounded-xl transition mt-4">
+                Закрыть
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-cardborder py-12 text-sm text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-black font-black text-sm">
+                    А
+                </div>
+                <span class="text-white font-bold">Плиточник Ялта — Артур</span>
+            </div>
+            <p class="text-xs text-center md:text-left text-gray-500">
+                © 2026 Все права защищены. Профессиональная укладка плитки, керамогранита до 120х60 см, заусовка 45°, эпоксидная и цементная затирка швов на ЮБК.
+            </p>
+            <div class="flex items-center gap-4">
+                <a href="tel:+79785009434" class="text-amber-400 font-semibold hover:underline">+7 978 500 94 34</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript functionality -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Gallery Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-amber-500', 'text-black');
+                    b.classList.add('bg-cardbg', 'border', 'border-cardborder', 'text-gray-300');
+                });
+                btn.classList.remove('bg-cardbg', 'border', 'border-cardborder', 'text-gray-300');
+                btn.classList.add('bg-amber-500', 'text-black');
+
+                const filter = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal Zoom for Gallery
+        const imageModal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDesc = document.getElementById('modal-desc');
+        const modalClose = document.getElementById('modal-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const title = item.querySelector('h4').textContent;
+                const desc = item.querySelector('p').textContent;
+
+                modalImg.src = img.src;
+                modalTitle.textContent = title;
+                modalDesc.textContent = desc;
+                imageModal.classList.remove('hidden');
+                imageModal.classList.add('flex');
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            imageModal.classList.remove('flex');
+            imageModal.classList.add('hidden');
+        });
+
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                imageModal.classList.remove('flex');
+                imageModal.classList.add('hidden');
+            }
+        });
+
+        // Calculator Logic
+        const calcArea = document.getElementById('calc-area');
+        const areaVal = document.getElementById('area-val');
+        const optMiter = document.getElementById('opt-miter');
+        const optHydro = document.getElementById('opt-hydro');
+        const optEpoxy = document.getElementById('opt-epoxy');
+
+        const resBase = document.getElementById('res-base');
+        const resMiter = document.getElementById('res-miter');
+        const resHydro = document.getElementById('res-hydro');
+        const resGrout = document.getElementById('res-grout');
+        const resTotal = document.getElementById('res-total');
+
+        function updateCalculator() {
+            const area = parseInt(calcArea.value);
+            areaVal.textContent = area + ' м²';
+
+            // Get selected tile type
+            const tileType = document.querySelector('input[name="tile-type"]:checked').value;
+            let baseRate = 1800; // standard per sq m
+            if (tileType === 'large') baseRate = 2400; // large format up to 120x60
+            if (tileType === 'mosaic') baseRate = 3000; // mosaic
+
+            const baseCost = area * baseRate;
+
+            // Miter cuts
+            let miterCost = 0;
+            if (optMiter.checked) {
+                miterCost = 15 * 1200; // 15 running meters at 1200 rub/m
+            }
+
+            // Hydro
+            let hydroCost = 0;
+            if (optHydro.checked) {
+                hydroCost = area * 450;
+            }
+
+            // Epoxy grout
+            let groutCost = area * 400;
+            if (optEpoxy.checked) {
+                groutCost = area * 950;
+            }
+
+            const total = baseCost + miterCost + hydroCost + groutCost;
+
+            resBase.textContent = baseCost.toLocaleString('ru-RU') + ' ₽';
+            resMiter.textContent = miterCost.toLocaleString('ru-RU') + ' ₽';
+            resHydro.textContent = hydroCost.toLocaleString('ru-RU') + ' ₽';
+            resGrout.textContent = groutCost.toLocaleString('ru-RU') + ' ₽';
+            resTotal.textContent = total.toLocaleString('ru-RU') + ' ₽';
+        }
+
+        calcArea.addEventListener('input', updateCalculator);
+        optMiter.addEventListener('change', updateCalculator);
+        optHydro.addEventListener('change', updateCalculator);
+        optEpoxy.addEventListener('change', updateCalculator);
+        document.querySelectorAll('input[name="tile-type"]').forEach(radio => {
+            radio.addEventListener('change', updateCalculator);
+        });
+
+        // Initialize calculator on load
+        updateCalculator();
+
+        // Contact Form Submission & Success Modal
+        const contactForm = document.getElementById('contact-form');
+        const successModal = document.getElementById('success-modal');
+        const successClose = document.getElementById('success-close');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successModal.classList.remove('hidden');
+            successModal.classList.add('flex');
+            contactForm.reset();
+        });
+
+        successClose.addEventListener('click', () => {
+            successModal.classList.remove('flex');
+            successModal.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
